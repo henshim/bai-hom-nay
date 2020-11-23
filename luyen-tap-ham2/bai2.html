@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const Pi = 3.14;
+
+    function main() {
+        nhapSo();
+        let cv = cvTron();
+        document.write('hình này có chu vi: ' + cv + '<br>');
+
+        let dt = dtTron();
+        document.write('diện tích: ' + dt + '<br>');
+
+    }
+
+    function nhapSo() {
+        a = +prompt('Nhập bán kính:')
+    }
+
+    function cvTron() {
+        return 2 * a * Pi;
+    }
+
+    function dtTron() {
+        return a * a * Pi;
+    }
+
+    main();
+</script>
+</body>
+</html>
